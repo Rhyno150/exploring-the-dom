@@ -4,7 +4,7 @@ const clearMessageButton = document.querySelector('.clearMessageButton');
 const inputBox = document.querySelector('.theInputValue');
 const fruitList = document.querySelector('.fruits');
 const fruitInput = document.querySelector('.inputFruit');
-const addFruitButton = document.querySelector('addFruitButton');
+const addFruitButton = document.querySelector('.addFruitButton');
 
 theMessageButton.addEventListener('click', function () {
     alert("button clicked!")
@@ -43,9 +43,9 @@ for (let i = 0; i < fruits.length; i++) {
 }
 
 //addFruitButton.addEventListener('click', function () {
- //   const li = document.createElement('li');
- //   li.innerText = fruitInput.value;
- //   fruitList.appendChild(li);
+  //  const li = document.createElement('li');
+  // li.innerText = fruitInput.value;
+ //  fruitList.appendChild(li);
 //})
 addFruitButton.addEventListener('click', function () {
     // 1. Get the fruit name from the input element
