@@ -1,4 +1,23 @@
 .darkmode {
-    background-color: black;
+    background-color: palegoldenrod;
     color: white;
 }
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    /* border: 1px solid #black; */
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  button:hover:not(:disabled) {
+    background-color: blue;
+    background-color: #004e89;
+  }
