@@ -16,15 +16,16 @@ theMessageButton.addEventListener('click', function () {
 
 
 
-    }
+   }
+});
+
+theMessageButton.addEventListener('click', function() {
+  myMessage.innerText = 'Button pressed'
 });
 
 
 
 
-clearMessageButton.addEventListener('click', function () {
-    myMessage.innerText = '';
-});
 
 myMessage.addEventListener('click', function () {
     myMessage.classList.toggle('darkmode')
@@ -66,7 +67,26 @@ addFruitButton.addEventListener('click', function () {
     // 5. (Optional) Clear the input field after adding
     document.querySelector('.inputFruit').value = "";
   });
+
+  theMessageButton.addEventListener('click', function() {
+    if (inputBox.value.trim().length > 0) 
+    myMessage.innerText = inputBox.value
+});
   
+
+ //myMessage.innerText = 'This is a message in the DOM!'
+//clearMessageButton.addEventListener('click', function () {
+  //myMessage.innerText = '';
+//});
+
+
+
+  const clearButton = document.querySelector('.clearMessageButton');
+  const messageElement = document.getElementById('messageToShow');  // Replace with actual ID
+
+  clearButton.addEventListener('click', () => {
+    messageElement.textContent = '';  // This clears the content
+  });
 
 
   
